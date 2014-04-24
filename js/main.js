@@ -7,10 +7,11 @@ var canvas = document.getElementById('canvas'),
     val = 50;
 
 var hammertime = new Hammer(canvas);
-// hammertime.on("drag", function(ev){
-//   ev.gesture.preventDefault();
-//   alert("Cool!");
-// })
+hammertime.on("drag", function(ev){
+  console.log(ev)
+  ev.gesture.preventDefault();
+  //alert("Cool!");
+})
 
 ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
@@ -28,7 +29,7 @@ $(window).resize(resize_canvas);
     var rect = canvas.getBoundingClientRect();
       return {
         x: evt.gesture.touches[0].clientX - rect.left,
-        y: evt.gesture.touches[0].clientX - rect.top
+        y: evt.gesture.touches[0].clientY - rect.top
     };
   }
 
