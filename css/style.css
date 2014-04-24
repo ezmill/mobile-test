@@ -1,0 +1,167 @@
+@import url("http://fonts.googleapis.com/css?family=PTMono");
+@import url("http://fonts.googleapis.com/css?family=Oswald:700");
+* {
+  background: #eee;
+  background: rgba(0,0,0,0.05);
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: rgba(0,0,0,0.5);
+  font-family: 'PT Mono', sans-serif;
+}
+h1 {
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Oswald', sans-serif;
+  font-style: bold;
+  color: rgba(0,0,0,0.5);
+  text-shadow: 5px 5px 0px #fff;
+  font-size: 128px;
+  z-index: -1;
+  top: 0px;
+  position: absolute;
+}
+h1:first-child {
+  margin-left: auto;
+}
+h1:last-child {
+  margin-right: auto;
+}
+div#main {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 74.25%;
+  margin-left: 0%;
+  margin-right: 3%;
+  top: 170px;
+  left: 50;
+  position: absolute;
+}
+div#main:before,
+div#main:after {
+  content: '';
+  display: table;
+}
+div#main:after {
+  clear: both;
+}
+div#main:last-child {
+  margin-right: 0%;
+}
+@media only screen and (max-width: 600px) {
+  div#main {
+    color: #f00;
+  }
+}
+div#box {
+  background-color: #000;
+  position: absolute;
+}
+div#colors {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+  position: absolute;
+}
+div#colors:before,
+div#colors:after {
+  content: '';
+  display: table;
+}
+div#colors:after {
+  clear: both;
+}
+div#colors:last-child {
+  margin-right: 0%;
+}
+div#colors div {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 12.5px;
+  margin: 10px;
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65.6666666666667%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+div#colors div:before,
+div#colors div:after {
+  content: '';
+  display: table;
+}
+div#colors div:after {
+  clear: both;
+}
+div#colors div:last-child {
+  margin-right: 0%;
+}
+span {
+  color: #fff;
+  font-size: 24px;
+  margin: 10px;
+  text-shadow: 1.5px #000;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+canvas {
+  display: inline-block;
+}
+.para {
+  color: #fff;
+  margin: 20px;
+}
+.white {
+  background-color: #fff;
+}
+.red {
+  background-color: #f00;
+}
+.green {
+  background-color: #0f0;
+}
+.blue {
+  background-color: #00f;
+}
+.clicked {
+  border: solid 2.5px #fff;
+}
+.white-clicked {
+  border: solid 2.5px #000;
+}
+.link-clicked {
+  text-decoration: underline;
+}
