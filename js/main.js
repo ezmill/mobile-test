@@ -15,15 +15,15 @@ hammertime.on("drag", function(ev){
 
 ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
-function resize_canvas(){
-    if (canvas.width  < window.innerWidth || canvas.width  > window.innerWidth){
-        canvas.width  = window.innerWidth;
-    }
-    if (canvas.height < window.innerHeight || canvas.height > window.innerHeight ){
-        canvas.height = window.innerHeight;
-    }
-}
-$(window).resize(resize_canvas);
+// function resize_canvas(){
+//     if (canvas.width  < window.innerWidth || canvas.width  > window.innerWidth){
+//         canvas.width  = window.innerWidth;
+//     }
+//     if (canvas.height < window.innerHeight || canvas.height > window.innerHeight ){
+//         canvas.height = window.innerHeight;
+//     }
+// }
+// $(window).resize(resize_canvas);
 (function () {
   function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
@@ -53,6 +53,7 @@ $(window).resize(resize_canvas);
         ctx.beginPath();
         ctx.moveTo(positionsX[i],positionsY[i]);
         ctx.lineTo(x,y);
+        ctx.lineWidth = 10;
         ctx.strokeStyle = color;
         ctx.stroke();
       }
