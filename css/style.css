@@ -13,7 +13,7 @@ body {
 }
 @media only screen and (max-width: 400px) {
   body {
-    background-color: rbga(255, 0, 0, 0.5);
+    background-color: #fff;
   }
 }
 h1 {
