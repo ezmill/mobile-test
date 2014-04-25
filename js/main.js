@@ -1,4 +1,4 @@
-var opacity = 0.1;
+var opacity = 0.6;
 var color = 'rgba(255,255,255, ' + opacity + ')';
 var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d'),

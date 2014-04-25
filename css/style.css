@@ -97,8 +97,8 @@ div#colors:last-child {
   margin-right: 0%;
 }
 div#colors div {
-  width: 20px;
-  height: 20px;
+  width: 250px;
+  height: 250px;
   display: inline-block;
   border-radius: 12.5px;
   margin: 10px;
