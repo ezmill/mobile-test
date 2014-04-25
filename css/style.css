@@ -1,9 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=PTMono");
 @import url("http://fonts.googleapis.com/css?family=Oswald:700");
-* {
-  background: #eee;
-  background: rgba(0,0,0,0.05);
-}
 html,
 body {
   padding: 0;
@@ -97,8 +93,8 @@ div#colors:last-child {
   margin-right: 0%;
 }
 div#colors div {
-  width: 250px;
-  height: 250px;
+  width: 1000px;
+  height: 1000px;
   display: inline-block;
   border-radius: 12.5px;
   margin: 10px;
