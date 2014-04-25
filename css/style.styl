@@ -10,8 +10,11 @@ html, body
 	width 100%
 	height 100%
 body
+	
 	background-color rgba(0,0,0,0.5)
 	font-family 'PT Mono', sans-serif
+	+mobile()
+		background-color rbga(255,0,0,0.5)
 h1
 	stack()
 	font-family: 'Oswald', sans-serif;
@@ -34,15 +37,15 @@ div#box
 	position absolute
 	
 div#colors
-	col(1/4)
-	position absolute 
+	position: absolute;
+	top: 100px;
+	right: 50px; 
 div#colors div{
-	width:1000px;
-	height:1000px;
+	width:50px;
+	height:50px;
 	display:inline-block;
-	border-radius: 12.5px;
+	border-radius: 100px;
 	margin: 10px;
-	col(2/3)
 
 }
 span{

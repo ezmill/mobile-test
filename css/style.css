@@ -11,6 +11,11 @@ body {
   background-color: rgba(0,0,0,0.5);
   font-family: 'PT Mono', sans-serif;
 }
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: rbga(255, 0, 0, 0.5);
+  }
+}
 h1 {
   display: block;
   clear: both;
@@ -69,56 +74,16 @@ div#box {
   position: absolute;
 }
 div#colors {
-  *zoom: 1;
-  float: left;
-  display: inline;
-  clear: none;
-  text-align: inherit;
-  padding-left: 0;
-  padding-right: 0;
-  width: 22.75%;
-  margin-left: 0%;
-  margin-right: 3%;
   position: absolute;
-}
-div#colors:before,
-div#colors:after {
-  content: '';
-  display: table;
-}
-div#colors:after {
-  clear: both;
-}
-div#colors:last-child {
-  margin-right: 0%;
+  top: 100px;
+  right: 50px;
 }
 div#colors div {
-  width: 1000px;
-  height: 1000px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
-  border-radius: 12.5px;
+  border-radius: 100px;
   margin: 10px;
-  *zoom: 1;
-  float: left;
-  display: inline;
-  clear: none;
-  text-align: inherit;
-  padding-left: 0;
-  padding-right: 0;
-  width: 65.6666666666667%;
-  margin-left: 0%;
-  margin-right: 3%;
-}
-div#colors div:before,
-div#colors div:after {
-  content: '';
-  display: table;
-}
-div#colors div:after {
-  clear: both;
-}
-div#colors div:last-child {
-  margin-right: 0%;
 }
 span {
   color: #fff;
