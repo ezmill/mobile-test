@@ -1,4 +1,4 @@
-var opacity = 0.6;
+var opacity = 0.4;
 var color = 'rgba(255,255,255, ' + opacity + ')';
 var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d'),
@@ -53,7 +53,7 @@ ctx.canvas.height = window.innerHeight;
         ctx.beginPath();
         ctx.moveTo(positionsX[i],positionsY[i]);
         ctx.lineTo(x,y);
-        ctx.lineWidth = 10;
+        ctx.lineWidth = 4;
         ctx.strokeStyle = color;
         ctx.stroke();
       }
